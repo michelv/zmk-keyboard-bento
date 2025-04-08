@@ -1,0 +1,13 @@
+file_format: "1"
+id: bento
+name: Bento
+type: shield
+url: https://github.com/Dwin17/bento/
+requires: [pro_micro]
+# exposes: [i2c_oled]
+features:
+  - keys
+  - encoder
+  - underglow
+  - studio
+  # - display
