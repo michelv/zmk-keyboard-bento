@@ -17,5 +17,14 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+        combo_bootloader {
+            timeout-ms = <50>;
+            key-positions = <0 1>;
+            bindings = <&bootloader>;
+        };
+    };
+
     sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
  };
