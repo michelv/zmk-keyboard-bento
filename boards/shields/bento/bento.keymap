@@ -7,14 +7,21 @@
         compatible = "zmk,keymap";
 
         default_layer { // Layer 0
-            // -------------------------------------
-            // |     Z     |     M     |     K     |
-            // |     A     |     B     |     C     |
-            // |     D     |     E     |     F     |
             bindings = <
                 &kp Z    &kp M    &kp K
                 &kp A    &kp B    &bl RGB_TOG
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+        };
+
+        other_layer { // Layer 0
+            bindings = <
+                &kp C    &kp D    &kp W
+                &kp E    &kp F    &bl RGB_HUI
+            >;
+
+            sensor-bindings = <&inc_dec_kp L R>;
         };
     };
 
@@ -26,6 +33,4 @@
             bindings = <&bootloader>;
         };
     };
-
-    sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
  };
